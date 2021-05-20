@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Csv Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
       ),
-      home: MyHomePage(title: 'Flutter Csv Demo'),
+      home: MyHomePage(title: 'Flutter CSV'),
     );
   }
 }
@@ -49,22 +49,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (_) => AllCsvFilesScreen()));
               },
-              color: Colors.cyanAccent,
-              child: Text("Load all csv form phone storage"),
+              color: Colors.purpleAccent[50],
+              child: Text("Load all CSV from phone storage"),
             ),
             MaterialButton(
               onPressed: () {
                 loadCsvFromStorage();
               },
-              color: Colors.cyanAccent,
-              child: Text("Load csv form phone storage"),
-            ),
-            MaterialButton(
-              onPressed: () {
-                generateCsv();
-              },
-              color: Colors.cyanAccent,
-              child: Text("Load Created csv"),
+              color: Colors.purpleAccent[50],
+              child: Text("Load CSV from phone storage"),
             ),
           ],
         ),
